@@ -1,6 +1,7 @@
 import { useState } from "react"
 import DeckPage from "./DeckPage"
 import styled from "styled-components";
+import logoBig from "../assets/images/image 1.png"
 
 
 export default function Welcome() {
@@ -8,7 +9,7 @@ export default function Welcome() {
     return (
         visibility ?
             <Container>
-                <img src="./imgs/image 1.png" />
+                <img src={logoBig} />
                 <h1>ZapRecall</h1>
                 <button onClick={() => setVisibility(false)} >Iniciar Recall!</button>
             </Container>
@@ -37,14 +38,15 @@ const Container = styled.div`
  button{
      color: #D70900;
      background-color: #fff;
-     border-radius: 3px;
-     border: none;
+     border-radius: 5px;
      width: 264px;
      height: 54px;
      margin-top: 30px;
      font-size: 18px;
      line-heigth: 21.6px;
      font-family:'Recursive', sans-serif;
+     cursor:pointer;
+     border: solid 1px #D70900;
 
  }
 

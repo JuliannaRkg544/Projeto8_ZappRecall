@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { useState } from "react";
 import CardAnswers from "./CardAnswers";
 import Card from "./Card";
+import arrow from "../assets/images/VectorCircular.png"
 
 
 export default function CardsQuestion({ card,answer,setAnswer }) {
@@ -10,7 +11,7 @@ export default function CardsQuestion({ card,answer,setAnswer }) {
         !selected ?
 
             <Card> <p>{card.question}</p>
-                <img src="./imgs/VectorCircular.png" onClick={(() => { setSelected(true) })} />
+                <img src={arrow} onClick={(() => { setSelected(true) })} />
             </Card>
             : <CardAnswers card={card} answer={answer} setAnswer={setAnswer}/>
     )

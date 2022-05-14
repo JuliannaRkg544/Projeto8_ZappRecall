@@ -1,7 +1,10 @@
+import { useState } from "react";
 import styled from "styled-components"
+import happyEmoji from "../assets/images/party2.png" 
+import sadEmoji from "../assets/images/sad 7.png" 
 
-export default function Footer({answer}) {
-    
+export default function Footer({answer, setAnswer} ) {
+ 
     console.log(answer)
     let tam = answer.length
 
@@ -9,7 +12,10 @@ export default function Footer({answer}) {
         if (answer.includes('red')){
           return (
             <Div>
-            <div>Putz... </div>
+            <div className="box">
+             <p><img src={sadEmoji} /> <span> Putz...</span></p>
+             <p>Ainda faltam alguns...Mas não desanime!</p>
+             </div>
             <p>{tam}/8 CONCLUÍDOS</p> 
             <div className="icons" >  {answer.map((c,index)=>{return <img key={index} src={`./imgs/Vector-${c}.png`} />})}</div> 
         </Div>
@@ -17,7 +23,10 @@ export default function Footer({answer}) {
         } else {
             return (
                 <Div>
-                <div>Parabéns!!! </div>
+                <div className="box">
+                 <p> <img src={happyEmoji} /> <span> Parabéns!!!</span> </p> 
+                <p> Você não esqueceu de nenhum flashcard!</p>
+                </div>
                 <p>{tam}/8 CONCLUÍDOS</p> 
                 <div className="icons" >  {answer.map((c,index)=>{return <img key={index} src={`./imgs/Vector-${c}.png`} />})}</div> 
             </Div>
@@ -36,7 +45,8 @@ export default function Footer({answer}) {
 const Div = styled.div`
 background-color: #fff;
 width: 100%;
-height: 70px;
+min-height: 80px;
+height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -45,7 +55,22 @@ left:0;
 rigth:0;
 bottom:0;
 flex-direction: column;
+.box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    padding: 20px;
+}
 
+span{
+    font-weight: 700;
+ 
+}
+.box img{
+    margin-bottom:-5px;
+}
 p{
     font-size: 18px;
     color: #333333;
@@ -53,7 +78,7 @@ p{
 }
 
 img{
-    margin-top:5px;
+    margin: 8px 0 ;
 }
 
 

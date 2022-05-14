@@ -32,7 +32,7 @@ export default function DeckPage() {
                     <Header />
                     {flashcards.map((card, index) => {return <Flashcard key={index} card={card}  answer={answer} setAnswer={setAnswer} />  })}
                 </Container>
-                <Footer answer = {answer} />
+                <Footer answer = {answer} setAnswer={setAnswer}  />
             </>
            
             
