@@ -4,14 +4,14 @@ import Card from "./CardBeige";
 import arrow from "../assets/images/VectorCircular.png"
 
 
-export default function CardsQuestion({ card, answer, setAnswer }) {
+export default function CardsQuestion({ card, answer, setAnswer,index }) {
     const [selected, setSelected] = useState(false)
     return (
         !selected ?
             <Card> <p>{card.question}</p>
                 <img src={arrow} onClick={(() => { setSelected(true) })} />
             </Card>
-            : <CardAnswers card={card} answer={answer} setAnswer={setAnswer} />
+            : <CardAnswers card={card} answer={answer} setAnswer={setAnswer} index={index}/>
     )
 }
 

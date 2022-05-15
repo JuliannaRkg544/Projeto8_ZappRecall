@@ -16,10 +16,11 @@ align-items: center;
 width: 300px;
 heigth: 131px;
 margin-top: 15px;
-background-color: #FFFFD4;
+background-color: #FFFFD4 ;
 padding: 15px;
 border-radius: 3px;
 cursor: pointer;
+box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15);
 
 p{
     font-family:  'Recursive', sans-serif;
@@ -34,25 +35,13 @@ p{
 .answer button {
     margin:5px;
     border:none;
-    border-radius: 3px;
+    border-radius: 5px;
     width: 85.17px;
     heigth: 37.17px;
     font-size: 12px;
     font-family:  'Recursive', sans-serif;
     cursor:pointer;
     color: #FFF;
-}
-.risk{
-    text-decoration: line-through;
-}
-.red{
-    color: #FF3030;
-}
-.yellow{
-   color: #FF922E;
-}
-.green{
-    color: #2FBE34;
 }
 
 

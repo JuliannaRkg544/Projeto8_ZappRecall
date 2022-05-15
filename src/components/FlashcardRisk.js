@@ -1,12 +1,13 @@
 
 import Card from "./CardBeige"
 import styled from "styled-components"
+import CardWhite from "./CardWhite"
 
-export default function FlashcardRisk({ card, color }) {
+export default function FlashcardRisk({ card, color, index }) {
     return (
-        <Card>
-            <p className={`risk ${color}`}> Pergunta {card.key}</p>  <img src={`./imgs/Vector-${color}.png`} />
-        </Card>
+        <CardWhite>
+            <p className={`risk ${color}`}> Pergunta {index+1}</p>  <img src={`./imgs/Vector-${color}.png`} />
+        </CardWhite>
     )
 }
 const Style = styled.div`

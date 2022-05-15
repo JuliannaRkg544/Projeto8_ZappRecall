@@ -4,7 +4,7 @@ import FlashcardRisk from "./FlashcardRisk"
 import Card from "./CardBeige"
 
 
-export default function CardAnswers({ card, answer, setAnswer }) {
+export default function CardAnswers({ card, answer, setAnswer,index }) {
     const [selected, setSelected] = useState(true)
     let status = ""
     const [color, setColor] = useState('')
@@ -27,7 +27,7 @@ export default function CardAnswers({ card, answer, setAnswer }) {
                     </div>
                 </Cards>
             </>
-            : <FlashcardRisk card={card} status={status} color={color} />
+            : <FlashcardRisk card={card} status={status} color={color} index={index} />
     )
 }
 

@@ -48,7 +48,7 @@ const Container = styled.div`
     color: #D70900;
     font-weigth: 700;
     font-size: 16px ;
-}
- }
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15);
+   }
 
 `
