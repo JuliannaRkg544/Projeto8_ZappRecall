@@ -11,7 +11,7 @@ export default function Welcome() {
             <Container>
                 <img src={logoBig} />
                 <h1>ZapRecall</h1>
-                <button onClick={() => setVisibility(false)} >Iniciar Recall!</button>
+              <button onClick={() => setVisibility(false)} >Iniciar Recall!</button>
             </Container>
             :
             <DeckPage />
@@ -36,18 +36,19 @@ const Container = styled.div`
  }
 
  button{
-     color: #D70900;
-     background-color: #fff;
-     border-radius: 5px;
-     width: 264px;
-     height: 54px;
-     margin-top: 30px;
-     font-size: 18px;
-     line-heigth: 21.6px;
-     font-family:'Recursive', sans-serif;
-     cursor:pointer;
      border: solid 1px #D70900;
-
+     margin-top: 15px;
+    width: 300px;
+    heigth: 131px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #FFF;
+    font-family:  'Recursive', sans-serif;
+    color: #D70900;
+    font-weigth: 700;
+    font-size: 16px ;
+}
  }
 
 `

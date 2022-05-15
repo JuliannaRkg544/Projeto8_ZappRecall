@@ -1,15 +1,15 @@
 
-import Card from "./Card"
+import Card from "./CardBeige"
+import styled from "styled-components"
 
- function FlashcardRisk({ card, status, color }) {
-    console.log("color ",color)
+export default function FlashcardRisk({ card, color }) {
     return (
         <Card>
             <p className={`risk ${color}`}> Pergunta {card.key}</p>  <img src={`./imgs/Vector-${color}.png`} />
         </Card>
-        )
-
+    )
 }
+const Style = styled.div`
 
-export default FlashcardRisk
 
+`

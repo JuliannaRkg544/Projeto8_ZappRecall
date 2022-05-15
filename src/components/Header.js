@@ -1,18 +1,18 @@
 import styled from "styled-components"
 import logoSmall from "../assets/images/image 2.png"
 
-export default function Header(){
+export default function Header() {
 
 
-    return(
+    return (
         <Container>
-         <img src={logoSmall} /> 
-         <p>ZapRecall</p>
+            <img src={logoSmall} />
+            <p>ZapRecall</p>
         </Container>
     )
 }
 
-const Container =  styled.div`
+const Container = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;

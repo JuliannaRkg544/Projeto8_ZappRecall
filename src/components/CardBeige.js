@@ -7,9 +7,10 @@ export default function Card({children}){
     )
 }
 
+
+
 const Style = styled.div`
 display: flex;
-flex-direction: center;
 justify-content: space-between;
 align-items: center;
 width: 300px;
@@ -36,7 +37,7 @@ p{
     border-radius: 3px;
     width: 85.17px;
     heigth: 37.17px;
-    font-size:12px;
+    font-size: 12px;
     font-family:  'Recursive', sans-serif;
     cursor:pointer;
     color: #FFF;
@@ -53,13 +54,6 @@ p{
 .green{
     color: #2FBE34;
 }
-button .red{
-    background-color: #FF3030;
-}
-button .yellow{
-   background-color: #FF922E;
-}
-button .green{
-    background-color: #2FBE34;
-}
+
+
 `

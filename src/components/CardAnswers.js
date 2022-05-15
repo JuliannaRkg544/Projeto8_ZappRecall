@@ -1,33 +1,33 @@
 import { useState } from "react"
 import styled from "styled-components"
 import FlashcardRisk from "./FlashcardRisk"
-import Card from "./Card"
-import Footer from "./Footer"
+import Card from "./CardBeige"
 
-export default function CardAnswers({card,answer,setAnswer }) {
-    const [selected,setSelected] = useState(true)
-    let status=""
-    const [color,setColor] = useState('')
-  
 
-    function flashcard(s,color){
+export default function CardAnswers({ card, answer, setAnswer }) {
+    const [selected, setSelected] = useState(true)
+    let status = ""
+    const [color, setColor] = useState('')
+
+
+    function flashcard(color) {
         setColor(color)
         setAnswer([...answer, color])
         setSelected(false)
-       }
+    }
 
     return (
-        selected?
-        <>
-        <Cards> <p >{card.answer}</p>
-        <div className="answer" >
-         <button className="red" onClick={()=>flashcard('não lembrei','red')}>Não lembrei</button>,
-         <button className="yellow" onClick={()=>flashcard('não lembrei','yellow')} >Quase nãp lembrei</button>
-         <button className="green" onClick={()=>flashcard('não lembrei','green')} >Zap</button>
-        </div>
-          </Cards>
-        </>
-          :<FlashcardRisk card = { card } status={status} color={color} />
+        selected ?
+            <>
+                <Cards> <p >{card.answer}</p>
+                    <div className="answer" >
+                        <button className="red" onClick={() => flashcard('red')}>Não lembrei</button>
+                        <button className="yellow" onClick={() => flashcard('yellow')} >Quase nãp lembrei</button>
+                        <button className="green" onClick={() => flashcard('green')} >Zap</button>
+                    </div>
+                </Cards>
+            </>
+            : <FlashcardRisk card={card} status={status} color={color} />
     )
 }
 

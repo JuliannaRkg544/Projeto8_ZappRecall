@@ -1,47 +1,40 @@
-import { useState } from "react";
 import styled from "styled-components"
-import happyEmoji from "../assets/images/party2.png" 
-import sadEmoji from "../assets/images/sad 7.png" 
+import happyEmoji from "../assets/images/party2.png"
+import sadEmoji from "../assets/images/sad 7.png"
 
-export default function Footer({answer, setAnswer} ) {
- 
-    console.log(answer)
+export default function Footer({ answer }) {
+
     let tam = answer.length
-
-    if (tam === 8){
-        if (answer.includes('red')){
-          return (
-            <Div>
-            <div className="box">
-             <p><img src={sadEmoji} /> <span> Putz...</span></p>
-             <p>Ainda faltam alguns...Mas não desanime!</p>
-             </div>
-            <p>{tam}/8 CONCLUÍDOS</p> 
-            <div className="icons" >  {answer.map((c,index)=>{return <img key={index} src={`./imgs/Vector-${c}.png`} />})}</div> 
-        </Div>
-          )
-        } else {
-            return (
-                <Div>
-                <div className="box">
-                 <p> <img src={happyEmoji} /> <span> Parabéns!!!</span> </p> 
-                <p> Você não esqueceu de nenhum flashcard!</p>
-                </div>
-                <p>{tam}/8 CONCLUÍDOS</p> 
-                <div className="icons" >  {answer.map((c,index)=>{return <img key={index} src={`./imgs/Vector-${c}.png`} />})}</div> 
-            </Div>
-              )
+    function endCard() {
+        if (tam === 8) {
+            if (answer.includes('red')) {
+                return (
+                    <div className="box">
+                        <p><img src={sadEmoji} /> <span> Putz...</span></p>
+                        <p>Ainda faltam alguns...Mas não desanime!</p>
+                    </div>
+                )
+            } else {
+                return (
+                    <div className="box">
+                        <p> <img src={happyEmoji} /> <span> Parabéns!!!</span> </p>
+                        <p> Você não esqueceu de nenhum flashcard!</p>
+                    </div>
+                )
+            }
         }
-
     }
 
     return (
+
         <Div>
-            <p>{tam}/8 CONCLUÍDOS</p> 
-            <div className="icons" >  {answer.map((c,index)=>{return <img key={index} src={`./imgs/Vector-${c}.png`} />})}</div> 
+            {endCard()}
+            <p>{tam}/8 CONCLUÍDOS</p>
+            <div className="icons" >  {answer.map((c, index) => { return <img key={index} src={`./imgs/Vector-${c}.png`} /> })}</div>
         </Div>
     )
 }
+
 const Div = styled.div`
 background-color: #fff;
 width: 100%;
