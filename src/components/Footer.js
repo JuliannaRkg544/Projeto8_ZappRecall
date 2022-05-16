@@ -71,7 +71,7 @@ p{
 }
 
 img{
-    margin: 8px 0 ;
+    margin: 8px 2px ;
 }
 
 

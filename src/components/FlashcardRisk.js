@@ -1,5 +1,4 @@
 
-import Card from "./CardBeige"
 import styled from "styled-components"
 import CardWhite from "./CardWhite"
 

@@ -1,7 +1,6 @@
 import { useState } from "react"
 import styled from "styled-components"
 import FlashcardRisk from "./FlashcardRisk"
-import Card from "./CardBeige"
 
 
 export default function CardAnswers({ card, answer, setAnswer,index }) {
@@ -22,7 +21,7 @@ export default function CardAnswers({ card, answer, setAnswer,index }) {
                 <Cards> <p >{card.answer}</p>
                     <div className="answer" >
                         <button className="red" onClick={() => flashcard('red')}>Não lembrei</button>
-                        <button className="yellow" onClick={() => flashcard('yellow')} >Quase nãp lembrei</button>
+                        <button className="yellow" onClick={() => flashcard('yellow')} >Quase não lembrei</button>
                         <button className="green" onClick={() => flashcard('green')} >Zap</button>
                     </div>
                 </Cards>
