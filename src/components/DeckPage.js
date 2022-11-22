@@ -6,14 +6,14 @@ import { useState } from "react"
 import Flashcard from "./Flashcard"
 
 const flashcards = [
-    { key: 1, question: "O que é JSX?", answer: "Uma extensão de linguagem do JavaScript" },
-    { key: 2, question: "O React é __", answer: "uma biblioteca JavaScript para construção de interfaces" },
-    { key: 3, question: "Componentes devem iniciar com __", answer: "letra maiúscula" },
-    { key: 4, question: "Podemos colocar __ dentro do JSX ", answer: "expressões" },
-    { key: 5, question: "O ReactDOM nos ajuda __", answer: "interagindo com a DOM para colocar componentes React na mesma" },
-    { key: 6, question: "Usamos o npm para __", answer: "gerenciar os pacotes necessários e suas dependências" },
-    { key: 7, question: "Usamos props para __", answer: "passar diferentes informações para componentes" },
-    { key: 8, question: "Usamos estado (state) para __", answer: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente" }
+    { key: 1, question: "O que é um Sistema Distribuído?", answer: "Conjuntos de computadores/processos independentes que juntos formam um sistema único e coerente que se comunicam" },
+    { key: 2, question: "Dê exemplo de um Sistema Distribuído e justifique", answer: "Qualquer aplicação mobile pode servir de exemplo, como youtube e facebook, pq elas podem ser executadas em diferentes dispositvos e permitir a comunicação entre estes " },
+    { key: 3, question: "Cite alguns desafios comuns a implementação de SD's", answer: "Segurança, Escalabilidade, Desempenho, Tolerância a falhas e Comunicação entre os componentes, " },
+    { key: 4, question: " ", answer: "expressões" },
+    // { key: 5, question: "O ReactDOM nos ajuda __", answer: "interagindo com a DOM para colocar componentes React na mesma" },
+    // { key: 6, question: "Usamos o npm para __", answer: "gerenciar os pacotes necessários e suas dependências" },
+    // { key: 7, question: "Usamos props para __", answer: "passar diferentes informações para componentes" },
+    // { key: 8, question: "Usamos estado (state) para __", answer: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente" }
 ]
 
 
