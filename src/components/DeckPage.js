@@ -9,7 +9,7 @@ const flashcards = [
     { key: 1, question: "O que é um Sistema Distribuído?", answer: "Conjuntos de computadores/processos independentes que juntos formam um sistema único e coerente que se comunicam" },
     { key: 2, question: "Dê exemplo de um Sistema Distribuído e justifique", answer: "Qualquer aplicação mobile pode servir de exemplo, como youtube e facebook, pq elas podem ser executadas em diferentes dispositvos e permitir a comunicação entre estes " },
     { key: 3, question: "Cite alguns desafios comuns a implementação de SD's", answer: "Segurança, Escalabilidade, Desempenho, Tolerância a falhas e Comunicação entre os componentes, " },
-    { key: 4, question: " ", answer: "expressões" },
+    { key: 4, question: "A internet poide ser considerada um SD? Pq? ", answer: "Sim, a internet é o maior exemplo de sistema distribuído; ela provê serviços que estão localizados em máquinas dispersas que são interligadas por algum tipo de rede, redes essas que utilizam de um meio de comunicação comum, os protocolos." },
     // { key: 5, question: "O ReactDOM nos ajuda __", answer: "interagindo com a DOM para colocar componentes React na mesma" },
     // { key: 6, question: "Usamos o npm para __", answer: "gerenciar os pacotes necessários e suas dependências" },
     // { key: 7, question: "Usamos props para __", answer: "passar diferentes informações para componentes" },
